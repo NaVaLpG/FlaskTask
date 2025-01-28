@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4>Car {{ car.brand }} editing</h4>
+<form action="" method="post">
+  <p>Brand</p>
+  <p><input type="text" value="{{ car.brand }}" name="brandbox"></p>
+  <p> Car model</p>
+  <p><input type="text" value="{{ car.model }}" name="modelbox"></p>
+  <p> Colorl</p>
+  <p><input type="text" value="{{ car.color }}" name="colorbox"></p>
+  <p> Year</p>
+  <p><input type="text" value="{{ car.year }}" name="yearbox"></p>
+  <p> Price</p>
+  <p><input type="text" value="{{ car.price }}" name="pricebox"></p>
+
+
+  <p><input type="submit" value="issaugoti"></p>
+</form>
+
+{% endblock %}

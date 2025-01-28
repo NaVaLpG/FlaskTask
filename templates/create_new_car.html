@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4>Iveskite nauja projekta</h4>
+<form action="/car/new" method="post">
+  <p>Brand</p>
+  <p><input type="text" name="brandbox"></p>
+  <p>Model</p>
+  <p><input type="text" name="modelbox"></p>
+  <p>Color</p>
+  <p><input type="text" name="colorbox"></p>
+  <p>Year</p>
+  <p><input type="text" name="yearbox"></p>
+  <p>Price</p>
+  <p><input type="text" name="pricebox"></p>
+  <p><input type="submit" value="Save"></p>
+
+
+</form>
+
+{% endblock %}
